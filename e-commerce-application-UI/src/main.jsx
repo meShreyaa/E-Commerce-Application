@@ -7,18 +7,11 @@ import Login from "./Public/Login.jsx";
 import Home from "./Public/Home.jsx";
 import Register from "./Public/Register.jsx";
 import BecomeASeller from "./Private/Seller/BecomeASeller.jsx";
+import AllRoutes from "./Routes/AllRoutes.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App/>}>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/cart"></Route>
-          <Route path="/seller1" element={<BecomeASeller />} />
-        </Route>
-      </Routes>
+     <AllRoutes/>
     </BrowserRouter>
   </React.StrictMode>
 );
